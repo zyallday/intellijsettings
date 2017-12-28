@@ -1,0 +1,76 @@
+<templateSet group="Android">
+  <template name="fbcs" value="(($cast$) findViewById(R.id.$resId$))." description="findViewById  with cast and setX" toReformat="true" toShortenFQNames="true">
+    <variable name="cast" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="noInstance" value="private $class$() {&#10;    //no instance&#10;    throw new UnsupportedOperationException(&quot;No Instance&quot;);&#10;}" description="private empty constructor to prohibit instance creation" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="sIntance" value="&#10;private $class$(){}&#10;&#10;public static $class$ getInstance(){&#10;    return InstanceHolder.INSTANCE;&#10;}&#10;&#10;private static final class InstanceHolder {&#10;    private static final $class$ INSTANCE = new $class$();&#10;}" description="Generate a singleton template" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="starter" value="public static void start$METHOD$(android.content.Context context) {&#10;    android.content.Intent starter = new Intent(context, $ACTIVITY$.class);&#10;    starter.putExtra($CURSOR$);&#10;    context.startActivity(starter);&#10;}" description="Creates a static start(...) helper method to start an Activity" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTIVITY" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="lsn" value="long start = System.nanoTime();" description="Start" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="len" value="long end = System.nanoTime();" description="End" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logcost" value="Log.d(TAG, String.format(&quot;Cost: %l&quot;, ($end$ - $start$)));" description="Log for Cost" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="start" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="starterA" value="android.content.Intent startActivity = new Intent($CONTENT$, $ACTIVITY$.class);&#10;startActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);&#10;startActivity(startActivity);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTENT" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTIVITY" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="mtn" value="$METHODNAME$" description="get name of method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="slp" value="SystemClock.sleep($milli$)" description="Sleep for milliseconds" toReformat="false" toShortenFQNames="true">
+    <variable name="milli" expression="" defaultValue="1000" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="starterS" value="android.content.Intent startService = new Intent($CONTENT$, $SERVICE$.class);&#10;startActivity(startService);" description="start a new service" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTENT" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="SERVICE" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="dcsInstance" value="&#10;private volatile static $class$ INSTANCE = null;&#10;&#10;private $class$(){}&#10;&#10;public static $class$ getInstance() {&#10;    $class$ result = INSTANCE;&#10;    if (null == result) {&#10;      synchronized($class$.class) {&#10;        result = INSTANCE;&#10;        if (null == result) {&#10;          INSTANCE = result = new $class$();&#10;        }&#10;      }&#10;    }&#10;    return INSTANCE;&#10;}&#10;" description="Create a double check singleton template" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>

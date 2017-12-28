@@ -1,0 +1,9 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Optimize Import &amp; Reformat Code">
+      <shortuct text="control alt L" />
+      <action id="OptimizeImports" />
+      <action id="ReformatCode" />
+    </macro>
+  </component>
+</application>

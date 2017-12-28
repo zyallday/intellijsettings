@@ -1,0 +1,9 @@
+<application>
+  <component name="AbbreviationManager">
+    <abbreviations>
+      <action id="Macro.Optimize Import &amp; Reformat Code">
+        <abbreviation name="or" />
+      </action>
+    </abbreviations>
+  </component>
+</application>

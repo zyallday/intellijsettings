@@ -1,0 +1,8 @@
+<templateSet group="AndroidComments">
+  <template name="ooooc" value="/* $content$ */" description="/* content */" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

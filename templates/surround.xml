@@ -1,0 +1,8 @@
+<templateSet group="surround">
+  <template name="EM" value="&lt;!-- @formatter:off --&gt;&#10;&#10;$SELECTION$&#10;&lt;!-- @formatter:on --&gt;&#10;" description="Surround with @formatter:off/on comment" toReformat="false" toShortenFQNames="false" />
+  <template name="PC" value="Preconditions.checkNotNull($SELECTION$)" description="Precheck" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
