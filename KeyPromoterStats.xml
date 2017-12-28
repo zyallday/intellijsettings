@@ -3,7 +3,8 @@
     <option name="stats">
       <map>
         <entry key="'&amp;#8984; 6'" value="1" />
-        <entry key="'⌃R'" value="1" />
+        <entry key="'⌃R'" value="8" />
+        <entry key="'⌘F2'" value="2" />
       </map>
     </option>
   </component>
