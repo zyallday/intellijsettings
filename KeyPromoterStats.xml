@@ -4,11 +4,14 @@
       <map>
         <entry key="'&amp;#8984; 1'" value="2" />
         <entry key="'&amp;#8984; 6'" value="5" />
-        <entry key="'&amp;#8984; 8'" value="1" />
+        <entry key="'&amp;#8984; 7'" value="2" />
+        <entry key="'&amp;#8984; 8'" value="2" />
         <entry key="'⇧F6'" value="1" />
-        <entry key="'⌃R'" value="21" />
-        <entry key="'⌃⌘S'" value="3" />
+        <entry key="'⇧⌘B' or '⌃⇧B' or '⇧⌘Button1 Click' or '⇧Button2 Click'" value="1" />
+        <entry key="'⌃R'" value="22" />
+        <entry key="'⌃⌘S'" value="4" />
         <entry key="'⌘F2'" value="3" />
+        <entry key="'⌥⌘B' or '⌥⌘Button1 Click'" value="1" />
       </map>
     </option>
   </component>
