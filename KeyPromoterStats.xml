@@ -7,10 +7,10 @@
         <entry key="'&amp;#8984; 6'" value="5" />
         <entry key="'&amp;#8984; 7'" value="3" />
         <entry key="'&amp;#8984; 8'" value="2" />
-        <entry key="'F8'" value="41" />
+        <entry key="'F8'" value="49" />
         <entry key="'⇧F6'" value="1" />
         <entry key="'⇧⌘B' or '⌃⇧B' or '⇧⌘Button1 Click' or '⇧Button2 Click'" value="1" />
-        <entry key="'⌃D'" value="15" />
+        <entry key="'⌃D'" value="16" />
         <entry key="'⌃R'" value="44" />
         <entry key="'⌃⌘S'" value="8" />
         <entry key="'⌘F2'" value="18" />
@@ -19,7 +19,7 @@
         <entry key="'⌥F7'" value="1" />
         <entry key="'⌥⌘B' or '⌥⌘Button1 Click'" value="1" />
         <entry key="'⌥⌘C'" value="1" />
-        <entry key="'⌥⌘R'" value="58" />
+        <entry key="'⌥⌘R'" value="68" />
       </map>
     </option>
   </component>
