@@ -1,0 +1,8 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="CustomRulesPlugin" type="Groovy" />
+      <mapping pattern="LintPlugin" type="Groovy" />
+    </extensionMap>
+  </component>
+</application>
